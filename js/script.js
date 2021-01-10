@@ -1,11 +1,11 @@
  // Copyright Year
  let cyear = new Date();
  let year = cyear.getFullYear();
- document.getElementById("cYear").textContent= year;
+ document.getElementById("cYear").textContent=year;
 
  // current
  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
- document.getElementById("current").textContent= new Date().toLocaleDateString("en-US", options);
+ document.getElementById("current").textContent=new Date().toLocaleDateString("en-US", options);
 
  // modified
  let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -31,5 +31,5 @@
     minute += " AM";
   }
  let fullDate = dayName + ", " + monthName + " " + last.getDate() + ", " + Year + ", " + hour + ":" + minute;
- document.getElementById("modified").textContent= fullDate;
+ document.getElementById("modified").textContent=fullDate;
 
