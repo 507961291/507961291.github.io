@@ -3,9 +3,9 @@ body{
     width: 80%;
     max-width: 1200px;
     background-color: lightgoldenrodyellow;
-    border-radius: 5%
+    border-radius: 5%;
     font-family: 'Montserrat Alternates', sans-serif;
-    color:darkslategray;
+    color: darkslategray;
     line-height: 2.5em;
  }
  
@@ -48,8 +48,8 @@ body{
  
  main{
     background-color:white;
-    margin; 0 auto;
-    padding: 2%
+    margin: 0 auto;
+    padding: 2%;
  }
  
  #profile{
@@ -57,9 +57,9 @@ body{
     margin: 0 auto;
     max-width: 100%;
     border-radius: 5%;
-    clear:both;
+    clear: both;
     float: right;
-    margin: -3%, 5%
+    margin: -3% 5%
  }
  
  .footer-box strong{
