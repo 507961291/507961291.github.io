@@ -59,9 +59,15 @@ body{
     border-radius: 5%;
     clear: both;
     float: right;
-    margin: -3% 5%
+    margin: -3% 5%;
+    box-shadow: -1px -1px 5px white;
  }
  
+ footer{
+    color:black;
+    text-shadow: -1px -1px 4px white;
+ }
+
  .footer-box strong{
     font-size: 1.5rem
  }
