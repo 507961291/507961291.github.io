@@ -39,7 +39,7 @@ body{
     text-align:center;
  }
  
- header, footer{
+ header{
     text-shadow: -1px -1px 4px white;
     background-color: lightseagreen;
     border-radius: 5px;
@@ -54,25 +54,32 @@ body{
  
  #profile{
     display:block;
-    margin: 0 auto;
     max-width: 100%;
     border-radius: 5%;
     clear: both;
     float: right;
-    margin: -3% 5%;
+    margin: 3% auto;
     box-shadow: -1px -1px 5px white;
  }
  
  footer{
     color:black;
     text-shadow: -1px -1px 4px white;
- }
-
- .footer-box strong{
-    font-size: 1.5rem
- }
- 
- .footer-box{
     align-content: center;
     text-align: center;
+    background-color: lightseagreen;
+    border-radius: 5px;
+    padding: 2%;
  }
+
+ footer strong{
+    font-size: 1.5rem
+ }
+
+footer a{
+   color: black;
+   font-family: 'Montserrat Alternates', sans-serif;
+   text-decoration: none;
+   text-shadow: 1px 1px 3px seashell;
+   font-size: 1.3em;
+}
