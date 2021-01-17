@@ -48,9 +48,9 @@ main{
 }
 
 main div img{
+    display:block;
+    margin:1rem 0;
     box-shadow: 0 0 3px #333;
-    margin: 2em auto;
-    max-width: 100%;
 }
 
 .example{
