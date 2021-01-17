@@ -38,7 +38,8 @@ footer{
 }
 
 footer a{
-    color: pink;
+    color: white;
+    text-shadow: 0 0 3px pink;
 }
 
 main{
@@ -47,7 +48,7 @@ main{
 }
 
 main div img{
-    box-shadow: 0 0 30px #333;
+    box-shadow: 0 0 3px #333;
     margin: 2em auto;
     max-width: 100%;
 }
