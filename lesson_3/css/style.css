@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&family=Raleway&display=swap');
+
+/*  fonts: 
+        font-family: 'Poller One', cursive;
+        font-family: 'Raleway', sans-serif;
+*/
+
+body{
+    max-width:100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+body h1,h2,h3,h4,h5,h6{
+    font-family: 'Poller One', cursive;
+    margin: 0;
+}
+
+header,footer{
+    background-color: #12232E;
+    color: #007CC7;
+}
+
+nav{
+    background-color:#007CC7;
+    color:#203647;
+}
+
+nav a{
+    color:#203647;
+    text-decoration: none;
+}
+
+nav .selected{
+    background-color: #4DA8DA;
+}
+
+nav ul{
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+main{
+    background-color: #EEFBFB;
+}
+
+/*   Color Demo   */
+#color_display{
+    background-color: black;
+    width: 100%;    
+}
+
+#color_display li{
+    margin: 2% auto;
+    height: 5rem;
+    color: #FFFFFF00;
+    display: inline-block;
+    border: 5px dashed white;
+    list-style-type: none;
+}
+
+#color_display li:first-child{
+    background-color:#12232E;
+}
+
+#color_display li:nth-child(2){
+    background-color:#007CC7;
+}
+
+#color_display li:nth-child(3){
+    background-color:#4DA8DA;
+}
+
+#color_display li:nth-child(4){
+    background-color:#203647;
+}
+
+#color_display li:last-child{
+    background-color:#EEFBFB;
+}
+/*  End of Color Scheme styling   */
+
+/* font demo */
+#regular_demo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+}
+
+#header_demo{
+    font-family: 'Poller One', cursive;
+    font-size: 2em;
+}
+
