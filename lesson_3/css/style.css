@@ -61,6 +61,10 @@ header,footer a{
     font-family: 'Poller One', cursive;
 }
 
+footer .desc{
+    color: #203647;
+}
+
 footer #current,#modified{
     white-space: nowrap;
 }
@@ -109,7 +113,6 @@ main h5,h6,div{
 
 main li img{
     width:15vw;
-    filter: invert();
     margin: 1vh 0;
 }
 
