@@ -4,7 +4,7 @@
         font-family: 'Poller One', cursive;
         font-family: 'Raleway', sans-serif;
 */
-
+/* Body Stylization */
 body{
     max-width:100%;
     font-family: 'Raleway', sans-serif;
@@ -15,19 +15,43 @@ body h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
 
+
+/*header stylization, with footer mirroring styles*/
 header,footer{
     background-color: #12232E;
     color: #007CC7;
 }
 
-nav{
-    background-color:#007CC7;
-    color:#203647;
+header{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
+header img{
+    width: 20vw;
+    max-width: 100px;
+    padding:1vw;
+}
+
+header h1{
+    color:#4DA8DA;
+    padding:1vw;
+}
+
+header h2{
+    font-family: 'Raleway', sans-serif;
+    color: #EEFBFB;
+    padding-bottom:1vh;
+}
+
+
+/*Navigation stylization*/
+
 nav a{
-    color:#203647;
+    color:#12232E;
     text-decoration: none;
+    font-size: 7.5vmin;
 }
 
 nav .selected{
@@ -36,26 +60,70 @@ nav .selected{
 
 nav ul{
     margin: 0 auto;
+    padding: 0;
     list-style-type: none;
 }
 
+nav li{
+    text-align: center;
+    background:linear-gradient(350deg, #007CC7,#4DA8DA);
+    padding: 1vw;
+    margin: 0 auto;
+}
+
+nav li:last-child{
+    border-bottom: none;
+}
+
+
+/*main style*/
+
 main{
-    background-color: #EEFBFB;
+    background-color:#12232E;
+    color: #EEFBFB;
+    padding: 1vh;
+}
+
+main p,li,h3,h4{
+    font-size: 5vw;
+}
+
+main h5,h6,div{
+    font-size: 4.75vw;
+}
+
+main li img{
+    width:15vw;
+    filter: invert();
+    margin: 1vh 0;
+}
+
+main h3,h5{
+    color: #007CC7;
+    margin: 1vh 0;
+}
+
+main h4,h6{
+    color:#4DA8DA;
+    margin: 1vh 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+main ul{
+    list-style-type: none;
+    padding: 0;
 }
 
 /*   Color Demo   */
-#color_display{
-    background-color: black;
-    width: 100%;    
-}
 
 #color_display li{
-    margin: 2% auto;
-    height: 5rem;
+    margin: 2vw 0;
+    width: 10vw;
+    height: 10vh;
     color: #FFFFFF00;
     display: inline-block;
-    border: 5px dashed white;
     list-style-type: none;
+    border: 1vw dashed black;
 }
 
 #color_display li:first-child{
