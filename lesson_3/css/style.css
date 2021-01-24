@@ -20,12 +20,14 @@ body h1,h2,h3,h4,h5,h6{
 header,footer{
     background-color: #12232E;
     color: #007CC7;
+    font-size:5vw;
 }
 
 header{
     display:flex;
     flex-flow: column nowrap;
     align-items: center;
+    font-size:3vw;
 }
 
 header img{
@@ -45,23 +47,25 @@ header h2{
     padding-bottom:1vh;
 }
 
+header,footer a{
+    text-decoration: none;
+    color: inherit;
+    text-shadow: .1px .1px #EEFBFB;
+}
+
 
 /*Navigation stylization*/
 
 nav a{
     color:#12232E;
     text-decoration: none;
-    font-size: 7.5vmin;
-}
-
-nav .selected{
-    background-color: #4DA8DA;
+    font-size: 5vmin
 }
 
 nav ul{
     margin: 0 auto;
     padding: 0;
-    list-style-type: none;
+    list-style-type: none
 }
 
 nav li{
@@ -71,10 +75,9 @@ nav li{
     margin: 0 auto;
 }
 
-nav li:last-child{
-    border-bottom: none;
+nav li .selected{
+    background-color:#007CC7;
 }
-
 
 /*main style*/
 
@@ -89,7 +92,7 @@ main p,li,h3,h4{
 }
 
 main h5,h6,div{
-    font-size: 4.75vw;
+    font-size: 5vw;
 }
 
 main li img{
@@ -109,9 +112,22 @@ main h4,h6{
     font-family: 'Raleway', sans-serif;
 }
 
+
 main ul{
     list-style-type: none;
     padding: 0;
+}
+
+.desc{
+    color:#4DA8DA;
+    font-size: 5vw;
+}
+
+main ul .subnote a{
+    font-size: 4vw;
+    color: #EEFBFB;
+    text-decoration: none;
+    text-shadow: .1px .1px #007CC7;
 }
 
 /*   Color Demo   */
@@ -150,11 +166,11 @@ main ul{
 /* font demo */
 #regular_demo{
     font-family: 'Raleway', sans-serif;
-    font-size: 1.3em;
+    font-size: 3vh;
 }
 
 #header_demo{
     font-family: 'Poller One', cursive;
-    font-size: 2em;
+    font-size: 3vh;
 }
 
