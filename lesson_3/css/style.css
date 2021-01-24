@@ -19,15 +19,15 @@ body h1,h2,h3,h4,h5,h6{
 /*header stylization, with footer mirroring styles*/
 header,footer{
     background-color: #12232E;
-    color: #007CC7;
+    color: #EEFBFB;
     font-size:5vw;
+    text-align: center;
 }
 
 header{
     display:flex;
     flex-flow: column nowrap;
     align-items: center;
-    font-size:3vw;
 }
 
 header img{
@@ -47,10 +47,22 @@ header h2{
     padding-bottom:1vh;
 }
 
+footer{
+    background-color:#EEFBFB;
+    color: #12232E;
+    text-align: center;
+    font-size:5vw;
+}
+
 header,footer a{
     text-decoration: none;
     color: inherit;
     text-shadow: .1px .1px #EEFBFB;
+    font-family: 'Poller One', cursive;
+}
+
+footer #current,#modified{
+    white-space: nowrap;
 }
 
 
