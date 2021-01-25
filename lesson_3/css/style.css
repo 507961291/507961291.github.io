@@ -1,148 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Poller+One&family=Raleway&display=swap');
-
 /*  fonts: 
         font-family: 'Poller One', cursive;
         font-family: 'Raleway', sans-serif;
 */
-/* Body Stylization */
-body{
-    max-width:100%;
-    font-family: 'Raleway', sans-serif;
-}
 
-body h1,h2,h3,h4,h5,h6{
+h1,h3,h5{
     font-family: 'Poller One', cursive;
-    margin: 0;
+    color: #007CC7;
+    margin: 1vmin 1vmin 0 0;
 }
 
+h2,h4,h6{
+    font-family: 'Raleway', sans-serif;
+    color: #007CC7;
+    margin: 1vmin 1vmin 0 0
+}
 
-/*header stylization, with footer mirroring styles*/
-header,footer{
-    background-color: #12232E;
-    color: #EEFBFB;
-    font-size:5vw;
-    text-align: center;
+h6{
+    font-size: 4vmin;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color:#203647;
+    background-color: #EEFBFB;
+    max-width:100%;
+    font-size: 4vmin;
+    padding:0;
+}
+
+body a,li{
+    text-decoration: none;
+    color: #007CC7;
+    list-style-type:none;
+    font-size: 4vmin;
+
+}
+
+body ul{
+    margin: 1vmin 1vmin 0 0;
+    padding:0;
 }
 
 header{
-    display:flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
 }
 
 header img{
-    width: 20vw;
-    max-width: 100px;
-    padding:1vw;
+    height: 10vmax;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self:right;
+    align-self: center;
+    padding: 2vmin;
+}
+
+header h1,h2{
+    white-space: nowrap;
+    font-size: 6vmin;
+    justify-self:left;
 }
 
 header h1{
-    color:#4DA8DA;
-    padding:1vw;
+    grid-column:2/3;
+    grid-row: 1/2;
+    align-self: end;
 }
 
 header h2{
-    font-family: 'Raleway', sans-serif;
-    color: #EEFBFB;
-    padding-bottom:1vh;
-}
-
-footer{
-    background-color:#EEFBFB;
-    color: #12232E;
-    text-align: center;
-    font-size:5vw;
-}
-
-header,footer a{
-    text-decoration: none;
-    color: inherit;
-    text-shadow: .1px .1px #EEFBFB;
-    font-family: 'Poller One', cursive;
-}
-
-footer .desc{
-    color: #203647;
-}
-
-footer #current,#modified{
-    white-space: nowrap;
-}
-
-
-/*Navigation stylization*/
-
-nav a{
-    color:#12232E;
-    text-decoration: none;
-    font-size: 5vmin
+    grid-column:2/3;
+    grid-row: 2/3;
+    align-self: start;
 }
 
 nav ul{
-    margin: 0 auto;
     padding: 0;
-    list-style-type: none
 }
 
 nav li{
+    margin:1vmin;
+    text-align:center;
+    border-radius: 3vmax;
+    padding: 3vmin;
+    background-color: #4DA8DA10;
+}
+
+nav li:hover{
+    background-color: #4DA8DA20
+}
+
+nav a{
+    padding: 3vmin 30vmin;
+}
+
+.selected{
+    text-decoration: underline dotted #4DA8DA75;
+}
+
+.scenarios{
+    padding:0;
+}
+
+main img{
+    width: 20vmin;
+}
+
+footer{
+    margin-top: 1vmin;
     text-align: center;
-    background:linear-gradient(350deg, #007CC7,#4DA8DA);
-    padding: 1vw;
-    margin: 0 auto;
 }
 
-nav li .selected{
-    background-color:#007CC7;
-}
-
-/*main style*/
-
-main{
-    background-color:#12232E;
-    color: #EEFBFB;
-    padding: 1vh;
-}
-
-main p,li,h3,h4{
-    font-size: 5vw;
-}
-
-main h5,h6,div{
-    font-size: 5vw;
-}
-
-main li img{
-    width:15vw;
-    margin: 1vh 0;
-}
-
-main h3,h5{
-    color: #007CC7;
-    margin: 1vh 0;
-}
-
-main h4,h6{
-    color:#4DA8DA;
-    margin: 1vh 0;
-    font-family: 'Raleway', sans-serif;
-}
-
-
-main ul{
-    list-style-type: none;
-    padding: 0;
-}
-
-.desc{
-    color:#4DA8DA;
-    font-size: 5vw;
-}
-
-main ul .subnote a{
-    font-size: 4vw;
-    color: #EEFBFB;
-    text-decoration: none;
-    text-shadow: .1px .1px #007CC7;
+footer h6{
+    display:inline;
 }
 
 /*   Color Demo   */
@@ -176,16 +148,12 @@ main ul .subnote a{
 #color_display li:last-child{
     background-color:#EEFBFB;
 }
-/*  End of Color Scheme styling   */
 
-/* font demo */
-#regular_demo{
-    font-family: 'Raleway', sans-serif;
-    font-size: 3vh;
-}
-
-#header_demo{
+/*Typography demo*/
+#typography li:first-child{
     font-family: 'Poller One', cursive;
-    font-size: 3vh;
 }
 
+#typography li:last-child{
+    font-family: 'Raleway', sans-serif;
+}

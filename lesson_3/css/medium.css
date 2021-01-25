@@ -1,0 +1,37 @@
+@media screen and (min-width: 32.5em){
+
+body{
+    font-size: 2vmin;
+}
+
+body a{
+    font-size: 2vmin;
+}
+
+nav{
+    white-space:nowrap;
+    margin: 0 auto;
+    text-overflow:ellipsis;
+    max-width: 100%;
+}
+
+nav ul{
+    text-align:center;
+    text-justify: center;
+    background-color: #4DA8DA10;
+    padding: .75vmax;
+}
+
+nav li{
+    padding: 0;
+    text-overflow:ellipsis;
+    display:inline;
+    background-color: #4DA8DA00;
+}
+
+nav a{
+    padding: 2vmax;
+    text-overflow:ellipsis;
+}
+
+}
