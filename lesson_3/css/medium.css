@@ -1,18 +1,11 @@
 @media screen and (min-width: 32.5em){
 
-body{
-    font-size: 2vmin;
-}
-
-body a{
-    font-size: 2vmin;
-}
-
 nav{
     white-space:nowrap;
     margin: 0 auto;
     text-overflow:ellipsis;
     max-width: 100%;
+    font-size: 2vmin;
 }
 
 nav ul{
@@ -32,6 +25,8 @@ nav li{
 nav a{
     padding: 2vmax;
     text-overflow:ellipsis;
+    height:100%;
+    width:100%;
 }
 
 }
