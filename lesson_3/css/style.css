@@ -38,7 +38,7 @@ body a,li{
 }
 
 body ul{
-    margin: 1vmin 1vmin 0 0;
+    margin: 1vmin 0 1vmin 0;
     padding:0;
 }
 
@@ -76,6 +76,10 @@ header h2{
     align-self: start;
 }
 
+nav{
+    display:flex;
+}
+
 nav ul{
     padding: 0;
 }
@@ -89,7 +93,9 @@ nav li{
 }
 
 nav li:hover{
-    background-color: #4DA8DA20
+    background-color: #4DA8DA20;
+    transition: .5s;
+    
 }
 
 nav a{
@@ -106,6 +112,10 @@ nav a{
 
 main img{
     width: 20vmin;
+}
+
+a:hover{
+    text-decoration: underline dotted #4DA8DA75;
 }
 
 footer{
