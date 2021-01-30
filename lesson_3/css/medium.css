@@ -9,7 +9,6 @@ nav{
 
 nav ul{
     text-align:center;
-    background-color: #4DA8DA10;
     width:100%;
 }
 
@@ -17,8 +16,6 @@ nav li{
     padding: 0;
     text-overflow:ellipsis;
     display:inline;
-    background-color: #4DA8DA00;
-    border-radius: 1vmin;
 }
 
 nav a{
