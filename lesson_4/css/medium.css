@@ -4,6 +4,10 @@ nav li{
     display:inline;
 }
 
+nav .responsive li{
+    display:inline;
+ }
+
 header .navMenuButton{
     display:none;
 }

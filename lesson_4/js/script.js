@@ -19,3 +19,5 @@
     else {
         menuButton.innerHTML='<a href="#">^</a>';}
  }
+
+ window.onresize = () => {var nav = document.querySelector('nav ul');if (window.innerWidth > 760) nav.classList.remove('.responsive')};
