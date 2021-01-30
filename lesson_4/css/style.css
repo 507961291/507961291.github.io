@@ -70,6 +70,17 @@ nav a{
     text-decoration: none;
 }
 
+nav a:hover{
+    border: 1px dashed #007cc7;
+    padding:3px;
+    border-radius: 3px;
+    transition: 1s;
+}
+
+.selected{
+    text-decoration: underline dotted #007cc7;
+}
+
 nav .responsive li{
     display:block;
  }
