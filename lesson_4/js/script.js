@@ -1,4 +1,5 @@
- //current date
+
+//current date
  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
  document.getElementById("current").textContent= new Date().toLocaleDateString("en-US", options);
 
@@ -18,5 +19,3 @@
     else {
         menuButton.innerHTML='<a href="#">^</a>';}
  }
-
- //window.onresize=() => {if (window.innerWidth >760) mainnav.classlist.remove('responsive');
