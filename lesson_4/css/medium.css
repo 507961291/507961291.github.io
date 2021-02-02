@@ -9,5 +9,13 @@ nav .responsive li{
  }
 
 header .navMenuButton{
-    display:none;
+    display:none;}
+ 
+body{
+    max-width: 80%;
+}
+
+
+    
+
 }
