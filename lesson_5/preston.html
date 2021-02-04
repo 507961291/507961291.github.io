@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Idaho Weather Site — Preston Town">
+        <title>Preston Town</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@700&family=Montserrat+Alternates&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/medium.css" media="screen">
+    </head>
+    <body>
+        <header>
+            <img src="images/icon.png" alt="Idaho Weather Site">
+            <h1>Idaho Weather Site</h1>
+            <h2>The Idahoan's Forecast Lookup</h2>
+            <div class="navMenuButton" onclick="toggleMenu()">
+                <a href="#">&equiv;</a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="selected"><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Preston Idaho</h1>
+            <div id="hero">
+                <img src="http://placeimg.com/800/300/nature" alt="Idaho Weather Scene">
+                <section id="hero_info">
+                    <h2>Weather Summary</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Currently:</td><td>Partly Cloudy</td>
+                            </tr>
+                            <tr>
+                                <td>Temperature:</td><td> 72° Fahrenheit</td>
+                            </tr>
+                            <tr>
+                                <td>Humidity:</td><td>84%</td>
+                            </tr>
+                            <tr>
+                                <td>Precipitation:</td><td>4%</td>
+                            </tr>
+                            <tr>
+                                <td>Wind Speed:</td><td>0 mph</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+           <section class="forecast">
+                <div class="forcast-box">
+                    <h2>Five Day Forecast</h2>
+                    <img src="http://placeimg.com/75/75/nature" alt="tomorrow">
+                    <img src="http://placeimg.com/75/75/nature" alt="the day after tomorrow">
+                    <img src="http://placeimg.com/75/75/nature" alt="two days after tomorrow">
+                    <img src="http://placeimg.com/75/75/nature" alt="three days after tomorrow">
+                    <img src="http://placeimg.com/75/75/nature" alt="four days after tomorrow">                    
+                </div>
+                <div class="article">
+                    <h2>Article Title</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, alias sequi dolore et dolorum, neque fugit tempora distinctio vitae cupiditate ut provident rerum soluta velit laborum vero reiciendis voluptatibus nulla?</p>
+                </div>
+                <div class="img-container">
+                    <img src="http://placeimg.com/300/100/nature" alt="article image">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-box">
+                <section class="footer-content">
+                    <h2>Contact Information</h2>
+                    <table>
+                        <tr>
+                            <td>&#x2709;</td>
+                            <td>Lorem, ipsum.</td>
+                        </tr>
+                        <tr>
+                            <td>&#9743;</td>
+                            <td>Lorem, ipsum.</td>
+                        </tr>
+                    </table>
+                    <div class="img-container">
+                        <img src="http://placeimg.com/250/75/nature" alt="footer image">
+                    </div>
+                    <div class="footer bar">
+                    <strong>Current Date: </strong><span id="current"></span>
+                    <p>&copy; <span id="cYear"></span>
+                    </div>
+                </section>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
