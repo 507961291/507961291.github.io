@@ -1,4 +1,6 @@
 
+window.onresize = () => {var nav = document.querySelector('nav ul');if (window.innerWidth > 760) nav.classList.remove('.responsive')};
+
 //current date
  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
  document.getElementById("current").textContent= new Date().toLocaleDateString("en-US", options);
@@ -20,4 +22,4 @@
         menuButton.innerHTML='<a href="#">^</a>';}
  }
 
- window.onresize = () => {var nav = document.querySelector('nav ul');if (window.innerWidth > 760) nav.classList.remove('.responsive')};
+ 
