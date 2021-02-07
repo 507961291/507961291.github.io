@@ -6,9 +6,13 @@ window.onresize = () => {var nav = document.querySelector('nav ul');if (window.i
  document.getElementById("current").textContent= new Date().toLocaleDateString("en-US", options);
 
   // Copyright Year
-  let cyear = new Date();
-  let year = cyear.getFullYear();
+  let now = new Date();
+  let year = now.getFullYear();
   document.getElementById("cYear").textContent= year;
+  let dayFriday = now.getDay();
+  if (dayFriday==5){
+      document.getElementById("banner").style.display="block";
+  }
 
   //Toggle Menu
  function toggleMenu(){
@@ -21,5 +25,3 @@ window.onresize = () => {var nav = document.querySelector('nav ul');if (window.i
     else {
         menuButton.innerHTML='<a href="#">^</a>';}
  }
-
- 

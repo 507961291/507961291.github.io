@@ -8,23 +8,6 @@ body{
 header{
     height: 20vh;
     max-height: none;
-    grid-template-columns: 1fr 1fr ;
-    align-content: center;
-}
-
-header img{
-    height:18vh;
-    max-height: none;
-    justify-self: right;
-    padding-right: 6vw;
-}
-
-header :nth-child(2) {
-    font-size: 2em;
-}
-
-header :nth-child(3) {
-    font-size: 1.5em;
 }
 
 header .navMenuButton{
