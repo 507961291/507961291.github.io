@@ -1,8 +1,8 @@
 body{
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     max-width: 1200px;
-    background-color: lightgoldenrodyellow;
+    background-image: linear-gradient(to right bottom,pink, lightseagreen);
     border-radius: 5%;
     font-family: 'Montserrat Alternates', sans-serif;
     color: darkslategray;
@@ -30,20 +30,26 @@ body{
     margin: 0 auto;
  }
 
+ main strong{
+ display: block;
+}
+
  h1, strong{
     font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    white-space:nowrap;
  }
  
  header h1{
-    font-size: 3rem;
     text-align:center;
+    font-size: 10vw;
  }
  
  header{
     text-shadow: -1px -1px 4px white;
     background-color: lightseagreen;
     border-radius: 5px;
-    padding: 2%;
+    padding: 5%;
     }
  
  main{
@@ -55,10 +61,12 @@ body{
  #profile{
     display:block;
     max-width: 100%;
+    border-top: solid 2px pink;
+    border-left: solid 2px pink;
     border-radius: 5%;
     clear: both;
-    margin: 3% auto;
-    box-shadow: -1px -1px 5px white;
+    margin: 0 auto;
+    box-shadow: 2px 2px 3px lightseagreen;
  }
  
  footer{
@@ -81,4 +89,8 @@ footer a{
    text-decoration: none;
    text-shadow: 1px 1px 3px seashell;
    font-size: 1.3em;
+}
+
+footer span {
+   font-size: 3vw;
 }

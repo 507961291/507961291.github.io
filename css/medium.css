@@ -4,4 +4,13 @@
     float: right
 }
 
+header h1{
+    text-align:center;
+    font-size: 5vw;
+ }
+
+ footer span {
+    font-size: 2vw;
+ }
+
 }

@@ -5,9 +5,22 @@ body{
     flex-direction:column;
 }
 
-header{
-    height: 20vh;
-    max-height: none;
+#header_box{
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 2vh;
+    max-width:500px;
+}
+
+header img{
+    height: auto;
+    max-width:100px;
+}
+
+#title_motto{
+    font-size: 1rem;
 }
 
 header .navMenuButton{
@@ -30,7 +43,7 @@ nav li{
 }
 
 main, footer{
-    max-width: 80%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
