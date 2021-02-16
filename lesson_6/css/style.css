@@ -166,3 +166,18 @@ footer{
     text-align: right;
     font-family: 'Poller One', cursive;   
 }
+
+.article h2{
+    max-width: 100%;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.article img{
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+footer img{
+    max-width:100%;
+}

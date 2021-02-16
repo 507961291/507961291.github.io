@@ -73,23 +73,54 @@
                     </table>
                 </section>
             </div>
-           <section class="forecast">
-                <div class="forcast-box">
-                    <h2>Five Day Forecast</h2>
-                    <img src="http://placeimg.com/75/75/nature" alt="tomorrow">
-                    <img src="http://placeimg.com/75/75/nature" alt="the day after tomorrow">
-                    <img src="http://placeimg.com/75/75/nature" alt="two days after tomorrow">
-                    <img src="http://placeimg.com/75/75/nature" alt="three days after tomorrow">
-                    <img src="http://placeimg.com/75/75/nature" alt="four days after tomorrow">                    
-                </div>
-                <div class="article">
-                    <h2>Article Title</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, alias sequi dolore et dolorum, neque fugit tempora distinctio vitae cupiditate ut provident rerum soluta velit laborum vero reiciendis voluptatibus nulla?</p>
-                </div>
-                <div class="img-container">
-                    <img src="http://placeimg.com/300/100/nature" alt="article image">
-                </div>
-            </section>
+            <div class="forecast_box"></div>
+                <h2>Five Day Forecast</h2>
+                <table id="five_day">
+                    <thead>
+                        <tr>
+                            <th>Today </th>
+                            <th>Tomorrow</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> ☀ </td>
+                            <td> ⛅ </td>
+                            <td> ☁ </td>
+                            <td> 🌧 </td>
+                            <td> 🌨 </td>
+                        </tr>
+                        <tr>
+                            <td>72° F</td>
+                            <td>68° F</td>
+                            <td>54° F</td>
+                            <td>45° F</td>
+                            <td>30° F</td>
+                        </tr>
+                    </tbody>
+                </table>                 
+            </div>
+            <div class="article">
+                <h2>Icing-Over to Stop the Creeks from Flowing</h2>
+                <img id="creek_cross" src="images/article_pic.jpg" alt="person crossing creek in snow">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, alias sequi dolore et dolorum, neque fugit tempora distinctio vitae cupiditate ut provident rerum soluta velit laborum vero reiciendis voluptatibus nulla?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit sapiente cumque recusandae consectetur dicta natus voluptate at officiis aut accusamus eaque modi iusto magnam ducimus, nam esse dolore exercitationem!
+                Dolores laboriosam officiis optio possimus? Reiciendis quidem tempora, dicta dolores blanditiis id corrupti rem hic quisquam facere nihil iusto aperiam eveniet, earum odio. Hic voluptate quisquam nesciunt provident odio dignissimos!
+                Officiis amet nostrum eius voluptatem aspernatur ut deserunt iusto, nesciunt labore, soluta cum rem impedit dolores laborum modi. Vel tempora odit temporibus animi. Natus provident veniam debitis deserunt quisquam atque.
+                Vel animi doloremque laborum eligendi, incidunt ipsa sed fugit sint totam, debitis, asperiores quod consectetur quibusdam voluptas nisi officiis! Eos cumque nesciunt dicta voluptatibus, rem ex quibusdam necessitatibus? Unde, alias.
+                Nihil earum veritatis eligendi quos illo a unde. Similique fuga vero nemo minima id, ea neque magnam necessitatibus illo in, incidunt mollitia corporis velit aperiam minus sunt voluptatem earum ipsum.
+                </p>
+                <p>Voluptates beatae ut at, eligendi dolorem nulla ea in iste reprehenderit? Dolore magnam blanditiis eveniet mollitia culpa necessitatibus quidem. Enim quasi iste soluta quidem sapiente ad quae exercitationem quam error.
+                Natus corporis nam temporibus amet, soluta labore doloribus, consequatur iusto voluptatem magnam doloremque ipsa quidem dicta veritatis eaque cupiditate quos laborum veniam maiores tempora rerum architecto earum enim. Tempore, provident!
+                Est esse fuga dignissimos tenetur iure optio ullam consequuntur et eos. Non in beatae necessitatibus sint animi provident optio ipsum, facere nisi aut earum ducimus doloribus nemo cum! Fugiat, ducimus.
+                Quis, ducimus quo. Mollitia quia tenetur recusandae doloremque nisi suscipit quos culpa accusamus corporis, nobis officia ipsa nihil quod? Libero at nesciunt rerum possimus odio esse mollitia delectus, quae iste?
+                Deleniti cum dolore quos, laudantium nemo officiis minus optio distinctio quibusdam pariatur ipsum esse tempora eius laboriosam velit similique corporis dolorum ab placeat repellendus voluptates harum quod perspiciatis! Exercitationem, maiores.
+                Voluptate voluptatem soluta suscipit praesentium ullam consequatur aliquid cum et, illo sint non nostrum itaque nulla, porro velit! Adipisci, unde? Tenetur cupiditate enim dolor facere commodi molestiae, magni tempore provident!</p>
+            </div>
+            
         </main>
         <footer>
             <div class="footer-box">
@@ -106,7 +137,7 @@
                         </tr>
                     </table>
                     <div class="img-container">
-                        <img src="http://placeimg.com/250/75/nature" alt="footer image">
+                        <img src="images/ice_tree.jpg" alt="footer image">
                     </div>
                     <div class="footer bar">
                     <strong>Current Date: </strong><span id="current"></span>
