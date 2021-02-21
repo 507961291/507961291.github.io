@@ -1,0 +1,40 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .02fr 1fr .02fr;
+    justify-items: center;
+    width: 100vw;
+}
+
+header{
+    grid-row: 1/2;
+    text-align: center;
+}
+
+main{
+    grid-row:2/3;
+    align-items: center;
+}
+
+picture{
+    height: 400px;
+    width: 300px;
+    padding: 5px;
+}
+
+img{
+    display:block;
+    height: 400px;
+    width: 300px;
+    filter: blur(0em);
+    transition: filter .5s;
+}
+
+[data-src] {
+    filter: blur(1em);
+}
+
+footer{
+    grid-row:3/4;
+}
+

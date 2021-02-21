@@ -38,7 +38,11 @@ document.getElementById('wind_chill').innerText= wc.toFixed(1)+"° Fahrenheit";
     var display = document.querySelector('.responsive');
     nav.classList.toggle('responsive'), false;
     if (display!=null){
-        menuButton.innerHTML='<a href="#">&equiv;</a>';}
+        menuButton.innerHTML='<a href="#">&equiv;</a>';
+        nav.style.height="0%";
+        }
     else {
-        menuButton.innerHTML='<a href="#">^</a>';}
+        menuButton.innerHTML='<a href="#">^</a>';
+        nav.style.height="100%";
+      }  
  }
