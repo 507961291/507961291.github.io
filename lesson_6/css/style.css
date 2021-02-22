@@ -181,7 +181,7 @@ footer img{
     justify-content: center;
 }
 
-.gallery picture{
+.gallery figure{
     max-height: 430px;
     max-width: 400px;
     margin: 5px;
@@ -197,19 +197,21 @@ footer img{
     box-shadow: 2px 2px 3px #4DA8DA;
 }
 
-.gallery picture img{
+.gallery picture{
     align-self: center;
     justify-self: center;
+}
+
+.gallery picture img{
     max-height: 400px;
     object-fit: contain;
     border-radius: 1%;
-    margin-bottom: 5px;
 }
 
-.gallery picture figcaption{
+.gallery figcaption{
     background-color: #EEFBFB;
-    border-radius: 2%;
     text-align:center;
     padding-top: 5px;
+    border-radius: 1%;
 }
 

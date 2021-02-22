@@ -17,10 +17,8 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .gallery picture:hover{
-        border-top: solid 2px #007cc7;
-        border-left: solid 2px#007cc7;
-        box-shadow: 2px 2px 3px #007cc7;
+    .gallery figure:hover{
+        box-shadow: 5px 5px 3px #007cc799;
     }
 
 }
