@@ -171,8 +171,45 @@ footer{
     white-space: normal;
 }
 
-
-
 footer img{
     max-width:100%;
 }
+
+/*---Gallery Style---*/
+.gallery{
+    display: grid;
+    justify-content: center;
+}
+
+.gallery picture{
+    max-height: 430px;
+    max-width: 400px;
+    margin: 5px;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 30px;
+    justify-content: center;
+    background-color:#4DA8DA99;
+    border-radius: 2%;
+    padding: 5px;
+    border-top: solid 2px pink;
+    border-left: solid 2px pink;
+    box-shadow: 2px 2px 3px #4DA8DA;
+}
+
+.gallery picture img{
+    align-self: center;
+    justify-self: center;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 1%;
+    margin-bottom: 5px;
+}
+
+.gallery picture .textbox{
+    background-color: #EEFBFB;
+    border-radius: 2%;
+    text-align:center;
+    padding-top: 5px;
+}
+

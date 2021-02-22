@@ -11,4 +11,16 @@
     #title_motto{
         font-size: 1rem;
     }
+
+    /*---Gallery Style---*/
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery picture:hover{
+        border-top: solid 2px #007cc7;
+        border-left: solid 2px#007cc7;
+        box-shadow: 2px 2px 3px #007cc7;
+    }
+
 }

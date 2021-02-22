@@ -67,4 +67,7 @@ main, footer{
     margin: 0 0 1rem 1rem;
 }
 
+/*---Gallery Style---*/
+.gallery {
+    grid-template-columns: 1fr 1fr;
 }

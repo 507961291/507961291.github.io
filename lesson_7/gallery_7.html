@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Idaho Weather Site — Preston Town">
+        <title>Preston Town</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="/lesson_6/css/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/lesson_6/css/medium.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/lesson_6/css/large.css" media="screen">
+        <link rel="shortcut icon" href="/lesson_6/images/favicon.ico">
+        <script src="lazyload.js" defer></script>
+    </head>
+    <body>
+        <div id="banner">
+            <strong>Saturday = Preston Pancakes in the Park!</strong><br>9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <header>
+            <div id="header_box">
+                <div class="image_box">
+                    <img src="/lesson_6/images/icon.png" alt="Idaho Weather Site">
+                </div>
+                <div id="title_motto">
+                    <h1>Idaho Weather Site</h1>
+                    <h2>The Idahoan's Forecast Lookup</h2>
+                </div>
+                <div class="navMenuButton" onclick="toggleMenu()">
+                    <a href="#">&equiv;</a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/lesson_6/preston_6.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li class="selected"><a href="gallery_7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Gallery</h1>
+            <div class="gallery">
+                <picture id="cloudy">
+                    <img src="imageLoading.png"  data-src="images/cloudy.jpg" alt="cloudy">
+                    <span class="textbox">Cloudy Day Out</span>
+                </picture>
+                <picture id="icicles">
+                    <img src="imageLoading.png"  data-src="images/icicles.jpg" alt="icicles">
+                    <span class="textbox">Icicles Forming</span>
+                </picture>
+                <picture id="lightningtrail">
+                    <img src="imageLoading.png"  data-src="images/lightningtrail.jpg" alt="lightning trail">
+                    <span class="textbox">Lightning Over a Trail</span>
+                </picture>
+                <picture id="rainbowcircle">
+                    <img src="imageLoading.png"  data-src="images/rainbowcircle.jpg" alt="rainbow circle">
+                    <span class="textbox">Rainbow Formed as a Circle</span>
+                </picture>
+                <picture id="raincloud">
+                    <img src="imageLoading.png"  data-src="images/raincloud.jpg" alt="rain cloud">
+                    <span class="textbox">Clouds Dropping Rain</span>
+                </picture>
+                <picture id="seaofclouds">
+                    <img src="imageLoading.png"  data-src="images/seaofclouds.jpg" alt="sea of clouds">
+                    <span class="textbox">Condensation in the Sky like a Sea of Clouds</span>
+                </picture>
+                <picture id="snowyforest">
+                    <img src="imageLoading.png"  data-src="images/snowyforest.jpg" alt="snow forest">
+                    <span class="textbox">Forest of Snow</span>
+                </picture>
+                <picture id="sunnyfield">
+                    <img src="imageLoading.png"  data-src="images/sunnyfield.jpg" alt="sunny field">
+                    <span class="textbox">Field Lit with Sunshine</span>
+                </picture>
+                <picture id="sunnylake">
+                    <img src="imageLoading.png"  data-src="images/sunnylake.jpg" alt="sunny lake">
+                    <span class="textbox">Lake warmed by the Sun</span>
+                </picture>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-box">
+                <section class="footer-content">
+                    <h2>Contact Information</h2>
+                    <table>
+                        <tr>
+                            <td>&#x2709;</td>
+                            <td>Lorem, ipsum.</td>
+                        </tr>
+                        <tr>
+                            <td>&#9743;</td>
+                            <td>Lorem, ipsum.</td>
+                        </tr>
+                    </table>
+                    <div class="footer bar">
+                    <strong>Current Date: </strong><span id="current"></span>
+                    <p>&copy; <span id="cYear"></span>
+                    </div>
+                </section>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="/lesson_6/js/script.js"></script>
+    </body>
+</html>
