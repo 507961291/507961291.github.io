@@ -137,7 +137,6 @@ footer{
     background-color:#12232E;
     font-family: 'Raleway', sans-serif;
     width:100%;
-    padding: 0.01rem;
 }
 
 
@@ -179,11 +178,12 @@ footer img{
 .gallery{
     display: grid;
     justify-content: center;
+    max-width: 95%;
 }
 
 .gallery figure{
-    max-height: 430px;
     max-width: 400px;
+    width: 85%;
     margin: 5px;
     display:grid;
     grid-template-columns: 1fr;
@@ -203,7 +203,9 @@ footer img{
 }
 
 .gallery picture img{
-    max-height: 400px;
+    max-height: 100%;
+    max-width: 100%;
+
     object-fit: contain;
     border-radius: 1%;
 }

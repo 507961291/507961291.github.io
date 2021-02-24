@@ -5,6 +5,10 @@ body{
     flex-direction:column;
 }
 
+header{
+    max-height:none;
+}
+
 #header_box{
     margin: 0 auto;
     display:grid;
@@ -15,8 +19,8 @@ body{
 }
 
 header img{
-    height: auto;
-    max-width:100px;
+    width:100px;
+    max-height: 100%;
 }
 
 #title_motto{
@@ -45,9 +49,8 @@ nav li{
 }
 
 main, footer{
-    max-width: 98%;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 2vw;
 }
 #hero{
     position: relative;
