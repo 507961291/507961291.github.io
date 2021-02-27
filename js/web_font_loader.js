@@ -1,7 +1,7 @@
 WebFont.load({
     google: {
       families: [
-         'Montserrat Alternates', 'Dancing Script'
+         'Montserrat Alternates', 'Dancing Script', 'Ubuntu'
       ]
     }
   });
