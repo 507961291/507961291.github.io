@@ -49,6 +49,14 @@ footer{
     font-size: 1em;
 }
 
+img{
+    box-shadow: 5px 5px 2px rgb(77,77,150), -5px -5px 2px rgb(197, 197, 197);
+    border-top: 1px solid rgb(77,77,150);
+    border-left: 1px solid rgb(77,77,150);
+    border-bottom: 1px solid rgb(197, 197, 197);
+    border-right: 1px solid rgb(197, 197, 197);
+}
+
 @media screen and (min-width: 32.5em){
 
     h1{
