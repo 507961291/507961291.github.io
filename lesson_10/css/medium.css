@@ -1,0 +1,78 @@
+@media screen and (min-width: 32.5em){
+
+body{
+    display:flex;
+    flex-direction:column;
+}
+
+header{
+    max-height:none;
+}
+
+#header_box{
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    max-width:500px;
+    min-height: 100%
+}
+
+header img{
+    width:100px;
+    max-height: 100%;
+}
+
+#title_motto{
+    font-size: 1rem;
+}
+
+header .navMenuButton{
+    display:none;
+}
+
+nav{
+    height: 5vh;
+    justify-content: space-around;
+    align-content: space-around;
+    max-width: 100%;
+}
+
+nav ul{
+    display:flex;
+    margin: 0;
+    max-width: 100%;
+}
+
+nav li{
+    display:block;
+}
+
+main, footer{
+    max-width: 100%;
+    margin: 0 auto;
+}
+#hero{
+    position: relative;
+}
+
+#hero_info{
+    position: absolute;
+    background: #EEFBFB99;
+    border: 3px solid #007cc7;
+    top: 10%;
+    left: 10%;
+    padding: 0 3% 3%;
+}
+
+.article img{
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+/*---Gallery Style---*/
+.gallery {
+    grid-template-columns: 1fr 1fr;
+}
+
+}
