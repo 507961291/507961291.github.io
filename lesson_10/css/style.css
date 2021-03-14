@@ -36,7 +36,6 @@ header #header_box .image_box{
 }
 
 header img{
-    filter: invert(1);
     max-height: 15vw;
 }
 
@@ -170,8 +169,27 @@ footer{
     white-space: normal;
 }
 
+#creek_cross{
+    margin: 0 auto;
+    display: block;
+}
+
 footer img{
     max-width:100%;
+}
+
+#forecast_box{
+    display:block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#forecast_box table{
+    width: 100%;
+}
+
+#forecast_box table td{
+    text-align: center;
 }
 
 /*---Gallery Style---*/

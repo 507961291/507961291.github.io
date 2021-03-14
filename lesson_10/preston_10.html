@@ -43,37 +43,34 @@
             <h1>Preston Idaho</h1>
             <div id="hero">
                 <picture>
-                    <source media="(max-width:799px)" srcset="images/wdd230_image_franklin400.jpg">
-                    <source media="(max-width:1199px)" srcset="images/wdd230_image_franklin800.jpg">
-                    <img src="images/wdd230_image_franklin1200.jpg" alt="Atmospheric Bliss">
+                    <source media="(max-width:799px)" srcset="images/victor-lu-8Rbj3EvdoDQ-unsplash-small.jpg">
+                    <source media="(max-width:1199px)" srcset="images/victor-lu-8Rbj3EvdoDQ-unsplash-medium.jpg">
+                    <img src="images/victor-lu-8Rbj3EvdoDQ-unsplash-large.jpg" alt="Atmospheric Bliss">
                 </picture>
                 <section id="hero_info">
                     <h2>Weather Summary</h2>
                     <table>
                         <tbody>
                             <tr>
-                                <td>Currently: </td><td>Partly Cloudy</td>
+                                <td>Currently: </td><td><span id="weather_desc">N/A</span></td>
                             </tr>
                             <tr>
-                                <td>High: </td><td><span id="high_temp">72° Fahrenheit</span></td>
+                                <td>High: </td><td><span id="high_temp">N/A</span>° Fahrenheit</td>
                             </tr>
                             <tr>
-                                <td>Wind Chill: </td><td><span id="wind_chill">72° Fahrenheit</span></td>
+                                <td>Wind Chill: </td><td><span id="wind_chill">N/A</span>° Fahrenheit</td>
                             </tr>
                             <tr>
-                                <td>Humidity: </td><td>84%</td>
+                                <td>Humidity: </td><td><span id="humidity">N/A</span>%</td>
                             </tr>
                             <tr>
-                                <td>Precipitation: </td><td>4%</td>
-                            </tr>
-                            <tr>
-                                <td>Wind Speed: </td><td>0 mph</td>
+                                <td>Wind Speed: </td><td><span id="wind_speed">N/A</span> mph</td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
             </div>
-            <div class="forecast_box"></div>
+            <div id="forecast_box">
                 <h2>Five Day Forecast</h2>
                 <table id="five_day">
                     <thead>
