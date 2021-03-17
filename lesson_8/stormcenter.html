@@ -101,30 +101,35 @@
                 </div>
                 <div class="form-box">
                     <label for="storm_region">Storm Region</label>
-                    <input type="select" id="storm_region" name="storm_region" list="regions" placeholder="Select Region">
+                    <select name="storm_region" id="storm_region" placeholder="Select Region">
+                        <option value="Preston">
+                        <option value="Soda Springs">
+                        <option value="Fish Haven">
+                    </select>
+                    <!-- <input type="select" id="storm_region" name="storm_region" list="regions" placeholder="Select Region">
                     <datalist id="regions">
                         <option value="Preston">
                         <option value="Soda Springs">
                         <option value="Fish Haven">
-                    </datalist>
+                    </datalist> -->
                 </div>
                 <div class="form-box">
                     <label>User in Danger?</label>
-                        <div id="user_danger">
-                            <input type="radio" id="user_danger_yes" name="user_danger" value="Yes" checked>
-                            <label for="user_danger_yes">Yes</label>
-                            <input type="radio" id="user_danger_maybe" name="user_danger" value="Maybe">
-                            <label for="user_danger_maybe">Maybe</label>
-                            <input type="radio" id="user_danger_no" name="user_danger" value="No">
-                            <label for="user_danger_no">No</label>
-                        </div>
+                    <div id="user_danger">
+                        <input type="radio" id="user_danger_yes" name="user_danger" value="Yes" checked>
+                        <label for="user_danger_yes">Yes</label>
+                        <input type="radio" id="user_danger_maybe" name="user_danger" value="Maybe">
+                        <label for="user_danger_maybe">Maybe</label>
+                        <input type="radio" id="user_danger_no" name="user_danger" value="No">
+                        <label for="user_danger_no">No</label>
+                    </div>
                 </div>
                 <div class="form-box">
                     <label for="additional_information">Additional details, information or comments</label>
-                    <input type="textarea" id="additional_information" name="additional_information">
+                    <textarea id="additional_information" name="additional_information" rows="4" cols="50">
+                    </textarea>
                 </div>
                 <div class="form-box">
-                    <label for="submit_form"></label>
                     <input type="submit" id="submit_form" name="submit_form">
                 </div>
             </fieldset>
