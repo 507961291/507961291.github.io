@@ -6,6 +6,7 @@
         <meta name="description" content="Idaho Weather Site — Storm Center">
         <title>Storm Center</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/stormCenter.css" media="screen">
         <link rel="stylesheet" type="text/css" href="/lesson_6/css/style.css" media="screen">
         <link rel="stylesheet" type="text/css" href="/lesson_6/css/medium.css" media="screen">
         <link rel="stylesheet" type="text/css" href="/lesson_6/css/large.css" media="screen">
@@ -43,6 +44,8 @@
             <h1>Storm Center</h1>
             <p>Please report storms or other unusual weather events in the below form. The Idaho Weather Site team will research all reports and inform communities expected to be adversely affected. Please provide your own information as the reporter. We thank you in advance for your cooperation.</p>
             <form name="storm_center" action="thanks.html" method="GET">
+                <fieldset>
+                <legend>Contact Details</legend>
                 <div class="form-box">
                     <label for="full_name">Full Name</label>
                     <input type="text" id="full_name" name="full_name" required>
@@ -59,6 +62,9 @@
                     <label for="zip_code">Postal Code</label>
                     <input type="number" id="zip_code" name="zip_code" placeholder="#####" required>
                 </div>
+                </fieldset>
+                <fieldset>
+                <legend>Storm Information</legend>
                 <div class="form-box">
                     <label for="storm_date">Storm Date</label>
                     <input type="date" id="storm_date" name="storm_date">
@@ -104,22 +110,24 @@
                 </div>
                 <div class="form-box">
                     <label>User in Danger?</label>
-                    <input type="radio" id="user_danger_yes" name="user_danger" value="Yes" checked>
-                    <label for="user_danger_yes">Yes</label>
-                    <input type="radio" id="user_danger_maybe" name="user_danger" value="Maybe">
-                    <label for="user_danger_maybe">Maybe</label>
-                    <input type="radio" id="user_danger_no" name="user_danger" value="No">
-                    <label for="user_danger_no">No</label>
+                        <div id="user_danger">
+                            <input type="radio" id="user_danger_yes" name="user_danger" value="Yes" checked>
+                            <label for="user_danger_yes">Yes</label>
+                            <input type="radio" id="user_danger_maybe" name="user_danger" value="Maybe">
+                            <label for="user_danger_maybe">Maybe</label>
+                            <input type="radio" id="user_danger_no" name="user_danger" value="No">
+                            <label for="user_danger_no">No</label>
+                        </div>
                 </div>
                 <div class="form-box">
                     <label for="additional_information">Additional details, information or comments</label>
                     <input type="textarea" id="additional_information" name="additional_information">
-
                 </div>
                 <div class="form-box">
                     <label for="submit_form"></label>
                     <input type="submit" id="submit_form" name="submit_form">
                 </div>
+            </fieldset>
             </form>
         </main>
         <footer>

@@ -61,11 +61,13 @@ window.onresize = () => {var nav = document.querySelector('nav ul');if (window.i
   }
 
   //5 day forecast
-  // const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c5cf8b8a6ee5cb33fce30431f6f49c46&units=imperial";
+  const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c5cf8b8a6ee5cb33fce30431f6f49c46&units=imperial";
 
-  // fetch(apiURL2)
-  //   .then((response)=> response.json())
-  //   .then((jsObject2)=> {
-  //     console.log(jsObject2);
+  fetch(apiURL2)
+  .then((response)=> response.json())
+  .then((jsObject2)=> {
+  console.log(jsObject2);
 
-      
+  document.getElementById('')
+
+  })
