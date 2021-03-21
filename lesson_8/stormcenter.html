@@ -49,6 +49,7 @@
                 <div class="form-box">
                     <label for="full_name">Full Name</label>
                     <input type="text" id="full_name" name="full_name" required>
+                    *required field
                 </div>
                 <div class="form-box">
                     <label for="email">Email</label>
@@ -57,10 +58,12 @@
                 <div class="form-box">
                     <label for="phone_number">Telephone Number</label>
                     <input type="tel" id="phone_number" name="phone_number" placeholder="###-###-####" required>
+                    *required field
                 </div>
                 <div class="form-box">
                     <label for="zip_code">Postal Code</label>
                     <input type="number" id="zip_code" name="zip_code" placeholder="#####" required>
+                    *required field
                 </div>
                 </fieldset>
                 <fieldset>
@@ -101,17 +104,12 @@
                 </div>
                 <div class="form-box">
                     <label for="storm_region">Storm Region</label>
-                    <select name="storm_region" id="storm_region" placeholder="Select Region">
-                        <option value="Preston">
-                        <option value="Soda Springs">
-                        <option value="Fish Haven">
+                    <select name="storm_region" id="storm_region">
+                        <option value="none" selected disabled hidden>Select Region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
                     </select>
-                    <!-- <input type="select" id="storm_region" name="storm_region" list="regions" placeholder="Select Region">
-                    <datalist id="regions">
-                        <option value="Preston">
-                        <option value="Soda Springs">
-                        <option value="Fish Haven">
-                    </datalist> -->
                 </div>
                 <div class="form-box">
                     <label>User in Danger?</label>
@@ -126,8 +124,7 @@
                 </div>
                 <div class="form-box">
                     <label for="additional_information">Additional details, information or comments</label>
-                    <textarea id="additional_information" name="additional_information" rows="4" cols="50">
-                    </textarea>
+                    <textarea id="additional_information" name="additional_information" rows="5" cols="33"></textarea>
                 </div>
                 <div class="form-box">
                     <input type="submit" id="submit_form" name="submit_form">
