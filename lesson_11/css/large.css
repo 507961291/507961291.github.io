@@ -75,4 +75,29 @@
         box-shadow: 5px 5px 3px #007cc799;
     }
 
+    /*---large view footer work ---*/
+
+footer{
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+}
+
+#contact{
+    grid-row: 1/2;
+    float: right;
+}
+
+#footer-img{
+    grid-row: 1/2;
+}
+
+#footer-img img{
+    object-fit: fill;
+}
+
+footer #footer-bar{
+ grid-row: 2/3;
+ text-align: center;
+}
+
 }
