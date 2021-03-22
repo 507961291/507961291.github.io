@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Idaho Weather Site — Preston Town">
+        <title>Preston Town</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/medium.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/large.css" media="screen">
+        <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <div id="banner">
+            <strong>Saturday = Preston Pancakes in the Park!</strong><br>9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <header>
+            <div id="header_box">
+                <div class="image_box">
+                    <img src="images/icon.png" alt="Idaho Weather Site">
+                </div>
+                <div id="title_motto">
+                    <h1>Idaho Weather Site</h1>
+                    <h2>The Idahoan's Forecast Lookup</h2>
+                </div>
+                <div class="navMenuButton" onclick="toggleMenu()">
+                    <a href="#">&equiv;</a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li class="selected"><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="hero">
+                <picture>
+                    <source media="(max-width:300px)" srcset="images/kevin-fitzgerald-mobile.jpg">
+                    <source media="(max-width:800px)" srcset="images/kevin-fitzgerald-tablet.jpg">
+                    <source media="(max-width:2000px)" srcset="images/kevin-fitzgerald-desktop.jpg">
+                    <img src="images/kevin-fitzgerald-2400X1350.jpg" alt="Boise forest">
+                </picture>
+                <section id="hero_info">
+                    <h1>Welcome to IdahoWeather.Site</h1>
+                </section>
+            </div>
+            <div id="town_data">
+                <h2>Town Weather Overview</h2>
+                <section>
+                    <div>
+                        <h3>Fish Haven</h3>
+                        <i>This is Fish Haven.</i>
+                        <br>
+                        <br>Year Founded: 1864
+                        <br>Population: 501
+                        <br>Annual Rain Fall: 14.2
+                    </div>
+                    <img src="images/fishhavenbarn.jpg" alt="Fish Haven Farm">
+                </section>
+                <section>
+                    <div>
+                        <h3>Preston</h3>
+                        <i>Home of Napolean Dynamite.</i>
+                        <br>
+                        <br>Year Founded: 1866
+                        <br>Population: 5204
+                        <br>Annual Rain Fall: 16.65
+                    </div>
+                    <img src="images/prestonbarn.jpg" alt="Preston Farm">
+                </section>   
+                <section>
+                    <div>
+                        <h3>Soda Springs</h3>
+                        <i>Historic Oregon Trail Oasis.<br> The Soda is on Us.</i>
+                        <br>
+                        <br>Year Founded: 1858
+                        <br>Population:2985
+                        <br>Annual Rain Fall: 15.75
+                    </div>
+                    <img src="images/sodaspringsbarn.jpg" alt="Soda Springs Farm">
+                </section>      
+            </div>
+            <div class="article">
+                <h2>Creeks Stop Flowing due to Icing-Over</h2>
+                <img id="creek_cross" src="images/article_pic.jpg" alt="person crossing creek in snow">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, alias sequi dolore et dolorum, neque fugit tempora distinctio vitae cupiditate ut provident rerum soluta velit laborum vero reiciendis voluptatibus nulla?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem odit sapiente cumque recusandae consectetur dicta natus voluptate at officiis aut accusamus eaque modi iusto magnam ducimus, nam esse dolore exercitationem!
+                Dolores laboriosam officiis optio possimus? Reiciendis quidem tempora, dicta dolores blanditiis id corrupti rem hic quisquam facere nihil iusto aperiam eveniet, earum odio. Hic voluptate quisquam nesciunt provident odio dignissimos!
+                Officiis amet nostrum eius voluptatem aspernatur ut deserunt iusto, nesciunt labore, soluta cum rem impedit dolores laborum modi.
+                </p>
+                <p>Voluptates beatae ut at, eligendi dolorem nulla ea in iste reprehenderit? Dolore magnam blanditiis eveniet mollitia culpa necessitatibus quidem. Enim quasi iste soluta quidem sapiente ad quae exercitationem quam error.
+                Natus corporis nam temporibus amet, soluta labore doloribus, consequatur iusto voluptatem magnam doloremque ipsa quidem dicta veritatis eaque cupiditate quos laborum veniam maiores tempora rerum architecto earum enim. Tempore, provident!
+                Est esse fuga dignissimos tenetur iure optio ullam consequuntur et eos.
+                <a href="#">continue reading...</a>
+            </div>
+            
+        </main>
+        <footer>
+            <div class="footer-box">
+                <section class="footer-content">
+                    <h2>Contact Information</h2>
+                    <table>
+                        <tr>
+                            <td>&#x2709;</td>
+                            <td>Contact@IdahoWeather.Site</td>
+                        </tr>
+                        <tr>
+                            <td>&#9743;</td>
+                            <td>(208) 832-68##</td>
+                        </tr>
+                    </table>
+                    <div class="img-container">
+                        <img src="images/idahoCities.jpg" alt="Idaho Cities">
+                    </div>
+                    <div class="footer bar">
+                    <strong>Current Date: </strong><span id="current"></span>
+                    <p>&copy; <span id="cYear"></span> Kelly Bush
+                    </div>
+                </section>
+            </div>
+            <div id="credit"><a href="https://openweathermap.com">Weather Data made available by OpenWeatherMap</a></div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

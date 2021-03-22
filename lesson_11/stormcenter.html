@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Idaho Weather Site — Storm Center">
+        <title>Storm Center</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/stormCenter.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/medium.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/large.css" media="screen">
+        <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <div id="banner">
+            <strong>Saturday = Preston Pancakes in the Park!</strong><br>9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <header>
+            <div id="header_box">
+                <div class="image_box">
+                    <img src="images/icon.png" alt="Idaho Weather Site">
+                </div>
+                <div id="title_motto">
+                    <h1>Idaho Weather Site</h1>
+                    <h2>The Idahoan's Forecast Lookup</h2>
+                </div>
+                <div class="navMenuButton" onclick="toggleMenu()">
+                    <a href="#">&equiv;</a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li class="selected"><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+        </nav>
+        <main>
+            <h1>Storm Center</h1>
+            <p>Please report storms or other unusual weather events in the below form. The Idaho Weather Site team will research all reports and inform communities expected to be adversely affected. Please provide your own information as the reporter. We thank you in advance for your cooperation.</p>
+            <form name="storm_center" action="thanks.html" method="GET">
+                <fieldset>
+                <legend>Contact Details</legend>
+                <div class="form-box">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" id="full_name" name="full_name" required>
+                    *required field
+                </div>
+                <div class="form-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Alias@Domain.TLD">
+                </div>
+                <div class="form-box">
+                    <label for="phone_number">Telephone Number</label>
+                    <input type="tel" id="phone_number" name="phone_number" placeholder="###-###-####" required>
+                    *required field
+                </div>
+                <div class="form-box">
+                    <label for="zip_code">Postal Code</label>
+                    <input type="number" id="zip_code" name="zip_code" placeholder="#####" required>
+                    *required field
+                </div>
+                </fieldset>
+                <fieldset>
+                <legend>Storm Information</legend>
+                <div class="form-box">
+                    <label for="storm_date">Storm Date</label>
+                    <input type="date" id="storm_date" name="storm_date">
+                </div>
+                <div class="form-box">
+                    <label for="storm_types">Type of Storm</label>
+                    <input list="storm_type" id="storm_types" name="storm_types">
+                    <datalist id="storm_type">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </div>
+                <div class="form-box">
+                    <label for="storm_severity">Severity of the Storm
+                    <input type="range" id="storm_severity" name="storm_severity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                    <span id="severity_value">5</span>
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                </div>
+                <div class="form-box">
+                    <label for="storm_region">Storm Region</label>
+                    <select name="storm_region" id="storm_region">
+                        <option value="none" selected disabled hidden>Select Region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </div>
+                <div class="form-box">
+                    <label>User in Danger?</label>
+                    <div id="user_danger">
+                        <input type="radio" id="user_danger_yes" name="user_danger" value="Yes" checked>
+                        <label for="user_danger_yes">Yes</label>
+                        <input type="radio" id="user_danger_maybe" name="user_danger" value="Maybe">
+                        <label for="user_danger_maybe">Maybe</label>
+                        <input type="radio" id="user_danger_no" name="user_danger" value="No">
+                        <label for="user_danger_no">No</label>
+                    </div>
+                </div>
+                <div class="form-box">
+                    <label for="additional_information">Additional details, information or comments</label>
+                    <textarea id="additional_information" name="additional_information" rows="5" cols="33"></textarea>
+                </div>
+                <div class="form-box">
+                    <input type="submit" id="submit_form" name="submit_form">
+                </div>
+            </fieldset>
+            </form>
+        </main>
+        <footer>
+            <div class="footer-box">
+                <section class="footer-content">
+                    <h2>Contact Information</h2>
+                    <table>
+                        <tr>
+                            <td>&#x2709;</td>
+                            <td>Lorem, ipsum.</td>
+                        </tr>
+                        <tr>
+                            <td>&#9743;</td>
+                            <td>Lorem, ipsum.</td>
+                        </tr>
+                    </table>
+                    <div class="footer bar">
+                    <strong>Current Date: </strong><span id="current"></span>
+                    <p>&copy; <span id="cYear"></span> Kelly Bush
+                    </div>
+                </section>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

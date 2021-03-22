@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Idaho Weather Site — Gallery">
+        <title>Gallery</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/medium.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/large.css" media="screen">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <script src="js/lazyload.js" defer></script>
+    </head>
+    <body>
+        <div id="banner">
+            <strong>Saturday = Preston Pancakes in the Park!</strong><br>9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <header>
+            <div id="header_box">
+                <div class="image_box">
+                    <img src="images/icon.png" alt="Idaho Weather Site">
+                </div>
+                <div id="title_motto">
+                    <h1>Idaho Weather Site</h1>
+                    <h2>The Idahoan's Forecast Lookup</h2>
+                </div>
+                <div class="navMenuButton" onclick="toggleMenu()">
+                    <a href="#">&equiv;</a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="selected"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Gallery</h1>
+            <div class="gallery">
+                <figure>
+                    <picture>
+                        <img src="images/imageLoading.png"  data-src="images/cloudy.jpg" alt="cloudy">
+                    </picture>
+                    <figcaption>Cloudy Day Out</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <img src="images/imageLoading.png"  data-src="images/icicles.jpg" alt="icicles">
+                    </picture>
+                    <figcaption>Icicles Forming</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <img src="images/imageLoading.png"  data-src="images/lightningtrail.jpg" alt="lightning trail">
+                    </picture>
+                    <figcaption>Lightning Over a Trail</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <img src="images/imageLoading.png"  data-src="images/rainbowcircle.jpg" alt="rainbow circle">
+                    </picture>
+                    <figcaption>Rainbow Formed as a Circle</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <img src="images/imageLoading.png"  data-src="images/raincloud.jpg" alt="rain cloud">
+                    </picture>
+                    <figcaption>Clouds Dropping Rain</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <img src="images/imageLoading.png"  data-src="images/seaofclouds.jpg" alt="sea of clouds">
+                    </picture>
+                    <figcaption>Condensation in the Sky like a Sea of Clouds</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <img src="images/imageLoading.png"  data-src="images/snowyforest.jpg" alt="snow forest">
+                    </picture>
+                    <figcaption>Forest of Snow</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <img src="images/imageLoading.png"  data-src="images/sunnyfield.jpg" alt="sunny field">
+                    </picture>
+                    <figcaption>Field Lit with Sunshine</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <img src="images/imageLoading.png"  data-src="images/sunnylake.jpg" alt="sunny lake">
+                    </picture>
+                    <figcaption>Lake warmed by the Sun</figcaption>
+                </figure>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-box">
+                <section class="footer-content">
+                    <h2>Contact Information</h2>
+                    <table>
+                        <tr>
+                            <td>&#x2709;</td>
+                            <td>Contact@IdahoWeather.Site</td>
+                        </tr>
+                        <tr>
+                            <td>&#9743;</td>
+                            <td>(208) 832-68##</td>
+                        </tr>
+                    </table>
+                    <div class="img-container">
+                        <img src="images/idahoCities.jpg" alt="Idaho Cities">
+                    </div>
+                    <div class="footer bar">
+                    <strong>Current Date: </strong><span id="current"></span>
+                    <p>&copy; <span id="cYear"></span> Kelly Bush
+                    </div>
+                </section>
+            </div>
+            <div id="credit"><a href="https://openweathermap.com">Weather Data made available by OpenWeatherMap</a></div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
