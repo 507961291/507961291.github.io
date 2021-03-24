@@ -255,6 +255,7 @@ footer img{
 .gallery figure{
     max-width: 400px;
     min-width: 200px;
+    min-height: 200px;
     width: 85%;
     margin: 5px;
     display:grid;
