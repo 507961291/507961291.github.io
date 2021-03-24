@@ -125,9 +125,10 @@ nav li{
      padding: 0.01rem;
  }
 
- main div:nth-child(2), div:nth-child(3){
+ /*what?! is this for? its messing things up elsewhere */
+ /* main div:nth-child(2), div:nth-child(3){
      padding: 0.5rem;
- }
+ } */
 
  main h1,h2,h3,h4,h5,h6{
     font-family: 'Poller One', cursive;
@@ -186,13 +187,20 @@ footer img{
 }
 
 #forecast_box{
+    text-align: center;
     display:block;
-    margin: 0 auto;
     width: 100%;
+    background-color: #12232E;
+    color: #EEFBFB;
+    padding: 1em 0;
 }
 
 #forecast_box table{
-    width: 100%;
+    width: 80%;
+    font-size: 1.5rem;
+    border-radius:1em;
+    margin: 0 auto;
+    padding: 1em;
 }
 
 #forecast_box table td{
