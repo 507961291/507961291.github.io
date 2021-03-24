@@ -32,7 +32,6 @@ header .navMenuButton{
 }
 
 nav{
-    height: 5vh;
     justify-content: space-around;
     align-content: space-around;
     max-width: 100%;
