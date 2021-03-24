@@ -26,6 +26,7 @@ fieldset{
     margin: 10px;
 }
 legend{
-    color:#007cc7
+    color:#007cc7;
+    font-size: 2em;
 }
 
