@@ -14,13 +14,19 @@
     text-shadow: -.5px -.5px var(--highlight1), .5px .5px var(--highlight2);
 }
 
+:root img{
+    max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6, strong, nav{
     font-family: var(--headerFont);
     text-shadow: -.5px -.5px var(--highlight1), .5px .5px var(--highlight2);
 }
 
 body{
-    font-family:var(--paragraphFont)
+    font-family:var(--paragraphFont);
+    max-width:350px;
+    margin: 0 auto;
 }
 
 header, nav, footer{
@@ -53,11 +59,14 @@ header{
     align-self: center;
     justify-self: center;
     padding: 5px;
+}
 
+#ccocIcon img{
+    max-width: none;
 }
 
 header h1,h2{
-    margin: 0;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -70,8 +79,7 @@ header h1,h2{
 }
 
 #carlsbad h1{
-    font-size: 4.5rem;
-    max-width:100%;
+    font-size: 4.30rem;
 }
 
 #chamberOfCommerce{
@@ -121,4 +129,119 @@ nav ul.responsive li{
 
 nav ul li{
     display: none;
+}
+
+/*---Weather---*/
+
+#weatherStats{
+    margin: 15px auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 30px 1fr;
+}
+
+#weatherStats h2{
+    text-align: center;
+    grid-column: 1/3;
+}
+
+#weatherIcon{
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: var(--highlight1);
+    border-radius: 15px 5px;
+    grid-column: 1/2;
+}
+
+#weatherStatsData{
+    grid-column: 2/3;
+}
+
+/*---Events---*/
+#upcomingEvents{
+    margin: 0px auto;
+    max-width: 80%;
+}
+
+.eventContainer{
+    border: solid 15px var(--highlight2);
+    border-radius: 15px 5px;
+    margin: 5px 0px;
+    box-shadow: 2.5px 2.5px 15px var(--highlight1);
+    padding: 5px;
+}
+
+.eventInfo{
+    margin: 5px 0px;
+    text-align: right;
+}
+
+.eventInfo h3{
+    padding: 0px 0px 5px;
+    margin: 0px 25px;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+/*---Display-o-Shops---*/
+
+#localAdvertisements figure {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#localAdvertisements figcaption{
+    background-color: var(--background);
+    padding: 15px;
+    color: white;
+    text-align: left;
+    margin: -2px 0px 2px;
+}
+
+#localAdvertisements picture{
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+}
+
+#localAdvertisements img{
+    margin: 0px auto;
+    width: 95%;
+    z-index:-2;
+    box-shadow: 2.5px 2.5px 15px var(--highlight1);
+}
+
+#localAdvertisements div{
+    border: dotted 0px white;
+}
+
+#localAdvertisements div:hover{
+    border: dotted 2px white;
+    transition: .5s;
+}
+
+#localAdvertisements div:nth-child(2) figcaption{
+    text-align: right;
+}
+
+
+/*---footer---*/
+footer{
+    padding: 5px;
+    border-radius: 15px 5px;
+}
+
+footer h1{
+    font-size: 1.5rem;
+    margin: 0px 0px .5rem;
+}
+
+footer img{
+    padding: 5px;
+}
+
+footer #finalBar{
+    text-align: center;
 }
