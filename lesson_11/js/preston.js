@@ -4,7 +4,7 @@
  }
 
  //Preston Page weather data
- const weatherAPI = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c5cf8b8a6ee5cb33fce30431f6f49c46&units=imperial";
+ const weatherAPI = "https://api.openweathermap.org/data/2.5/weather?id=5334223&appid=c5cf8b8a6ee5cb33fce30431f6f49c46&units=imperial";
 
  fetch(weatherAPI)
   .then((response) => response.json())

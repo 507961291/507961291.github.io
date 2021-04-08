@@ -29,6 +29,10 @@ body{
     margin: 0 auto;
 }
 
+#welcomeStatement a {
+    color: var(--darkFont);
+}
+
 header, nav, footer{
     background-color: var(--background);
     color: var(--lightFont);
