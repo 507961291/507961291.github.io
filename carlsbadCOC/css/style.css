@@ -1,0 +1,124 @@
+:root{
+    --background: #0b5394ff;
+    --backgroundContrast: #3d85c6;
+    --highlight1: #4CB3ED;
+    --highlight2: #e06666ff;
+    --darkFont: black;
+    --lightFont: white;
+    --headerFont: 'Lobster', cursive;
+    --paragraphFont: 'Exo', sans-serif;
+}
+
+:root a{
+    text-decoration: none;
+    text-shadow: -.5px -.5px var(--highlight1), .5px .5px var(--highlight2);
+}
+
+h1, h2, h3, h4, h5, h6, strong, nav{
+    font-family: var(--headerFont);
+    text-shadow: -.5px -.5px var(--highlight1), .5px .5px var(--highlight2);
+}
+
+body{
+    font-family:var(--paragraphFont)
+}
+
+header, nav, footer{
+    background-color: var(--background);
+    color: var(--lightFont);
+}
+
+header a, nav a, footer a{
+    color: var(--lightFont);
+}
+
+nav ul{
+    list-style: none;
+}
+
+
+/*---Header Placement--*/
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 3fr 1fr;
+    text-align: justify;
+    padding: 5px;
+    border-radius: 15px 5px;
+}
+
+#ccocIcon{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+    padding: 5px;
+
+}
+
+header h1,h2{
+    margin: 0;
+    padding: 0px;
+}
+
+#carlsbad{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: flex;
+    padding: 0px 5px;
+    text-align: left;
+}
+
+#carlsbad h1{
+    font-size: 4.5rem;
+    max-width:100%;
+}
+
+#chamberOfCommerce{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: right;
+    white-space: nowrap;
+    padding: 0px 5px;
+}
+
+/*---nav---*/
+
+nav{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul{
+    padding: 5px;
+    text-align: center;
+    margin:0px;
+}
+
+nav ul li{
+    padding: 10px;
+    border: solid 1px var(--highlight1);
+    margin: 2px 1px;
+    border-radius: 15px 5px;
+}
+
+nav ul li:hover{
+    background-color: var(--highlight1);
+    transition-duration: .5s;
+}
+
+nav ul.responsive li:first-child{
+    display: block;
+}
+
+nav ul li:first-child{
+    display: block;
+}
+
+nav ul.responsive li{
+    display: block;
+}
+
+nav ul li{
+    display: none;
+}

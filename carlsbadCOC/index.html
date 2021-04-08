@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kelly Bush">
+    <meta name="description" content="BYUI Student Kelly Bush's WDD230 Final Website Project">
+    
+    <title>Carlsbad Chamber of Commerce</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!--normalize file-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"> <!--link to stylesheet-->
+    <link rel="shortcut icon" href="img/favicon.ico"> <!--Favicon-->
+</head>
+<body>
+<header>
+    <div id="ccocIcon">
+        <img src="img/logoSmall.png" alt="Carlsbad Chamber of Commerce Icon">
+    </div>
+    <div id="carlsbad">
+        <h1>Carlsbad</h1>
+    </div>
+    <div id="chamberOfCommerce">
+        <h2>Chamber of Commerce</h2>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li id="menuClick" onclick="toggleMenu()"><a href="#">≡ Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Carlsbad</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <div id="welcomeStatement">
+        <h1>Welcome</h1>
+        <p>If you are looking to open your business in our beach town, we invite you to <strong>JOIN NOW</strong>! We are here to establish a forum for business owners to collaborate and inform one another on events and initiatives that drive business. Individually, we can all do business, but together we can <strong>MAXIMIZE IT</strong>!</p>
+        <p>Our goal is to see a 15% year over year increase in revenue for our business owners. Our beach town has plenty of established businesses and have helped new shops open and integrate successfully.</p>
+    </div>
+    <div id="weatherStats">
+        <h2>Weather Conditions</h2>
+        <div id="weatherIconContainer">
+            <span id="weatherIcon"></span>
+        </div>
+        <div id="weatherStatsData">
+            <span id="temperature"></span>
+            <span id="description"></span>
+            <span id="humidity"></span>
+        </div>
+    </div>
+    <div id="upcomingEvents">
+        <div id="eventContainer">
+            <div class="eventInfo">
+                <span class="eventName"><h3>Friday Afternoon</h3></span>
+                <span class="eventInfo">
+                Family Boardwalk Stroll
+                Featuring live music & 
+                3 Street Tacos for $5!
+                </span>
+            </div>
+        </div>
+        <div id="eventContainer">
+            <div class="eventInfo">
+                <span class="eventName"><h3>Saturday Morning</h3></span>
+                <span class="eventInfo">
+                Brunch & Paddle Out
+                $30 Board Rentals for the Day!
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="localAdvertisements">
+        <div id="tacoAdvertisement">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <img src="img/tacosSmall.jpg" alt="Taco Shop">
+                    </picture>
+                    <figcaption>Taco Shop</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div id="boardAdvertisement">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <img src="img/boardsSmall.jpg" alt="Board Shop">
+                    </picture>
+                    <figcaption>Board Shop</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div id="musicAdvertisement">
+            <a href="#">
+                <figure>
+                    <picture>
+                        <img src="img/pierDrummerSmall.jpg" alt="Live Music">
+                    </picture>
+                    <figcaption>Live Music</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+</main>
+<footer>
+    <div id="contactInfo">
+        <h1>Carlsbad Chamber of Commerce</h1>
+        100 N Highway 101, Carlsbad CA, 92009
+        Chamber@Carlsbad.Commerce
+    </div>
+    <div id="finalBar">
+        <a href="https://facebook.com/#">Facebook</a> |
+        <a href="https://instagram.com/#">Instagram</a> |
+        <a href="attributions.html">Attributions</a> |
+        &copy; <span id="currentYear">2021</span> Kelly Bush
+    </div>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
