@@ -21,19 +21,20 @@ nav.classList.toggle('responsive'), false;
 }
 
 //---Weather API---
-const weatherAPI ="https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=686750bcf8739ca1cbd8ab627a2f7e30&units=imperial";
+const weatherAPI ="https://api.openweathermap.org/data/2.5/weather?id=5460459&appid=686750bcf8739ca1cbd8ab627a2f7e30&units=imperial";
 
 fetch(weatherAPI)
   .then((response) => response.json())
   .then((weatherData)=> {
     console.log(weatherData);
 
-    document.getElementById('temperature').textcontent=weatherData.main.temp;
-    document.getElementById('description').textcontent=weatherData.weather[0].description;
-    document.getElementById('humidity').textcontent=weatherData.main.humidity;
+    document.getElementById('temperature').textContent= (weatherData.main.temp).toFixed(0) + "° Fahrenheit";
+    document.getElementById('description').textContent=weatherData.weather[0].main;
+    document.getElementById('humidity').textContent=weatherData.main.humidity+"% Humidity";
     //---icon setup---
-    // const iconID=weatherData.weather[0].icon;
-    // const imageIcon = document.createElement('img');
-    // imageIcon.src="http://openweathermap.org/img/wn/"+iconID+".png";
+    const iconID=weatherData.weather[0].icon;
+    const imageIcon = document.createElement('img');
+    imageIcon.src="http://openweathermap.org/img/wn/"+iconID+"@2x.png";
     // imageIcon.alt= weatherData.list[0].weather[0].description;
+    document.getElementById("weatherIconContainer").appendChild(imageIcon);
   })
