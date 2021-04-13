@@ -1,8 +1,14 @@
 @media only screen and (min-width:60em){
-main{
+body{
+    max-width: 75vw;
+    width: 80%;
+}
+
+    main{
     display: grid;
-    grid-template-columns: 40vw 25vw 1fr;
+    grid-template-columns: 40vw auto auto;
     grid-template-rows: 1fr auto;
+    column-gap: 10px;
 }
 
 #welcomeStatement{
@@ -28,11 +34,15 @@ main{
     grid-column: 3/4;
     grid-row: 1/3;
     display: block;
+    margin: 15px;
+    height: 100%;
+    
 }
 
 #localAdvertisements figure{
     display: block;
-    max-width: none;
+    max-width: 100%;
+    margin: 20% 0;
 }
 
 }
