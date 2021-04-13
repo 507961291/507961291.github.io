@@ -1,0 +1,38 @@
+@media only screen and (min-width:60em){
+main{
+    display: grid;
+    grid-template-columns: 40vw 25vw 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+#welcomeStatement{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#weatherStats{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+#upcomingEvents{
+    margin: 15px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+#localAdvertisements{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    display: block;
+}
+
+#localAdvertisements figure{
+    display: block;
+    max-width: none;
+}
+
+}

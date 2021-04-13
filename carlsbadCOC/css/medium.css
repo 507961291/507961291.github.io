@@ -1,0 +1,92 @@
+@media screen and (min-width: 32.5em){
+
+/*---nav---*/
+
+nav{
+    padding: 10px;
+}
+
+nav ul{
+    padding: 10px;
+}
+
+nav ul.responsive li:first-child{
+    display: none;
+}
+
+nav ul li:first-child{
+    display: none;
+}
+
+nav ul.responsive li{
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 10px;
+    padding: 10px 10px;
+}
+
+/*---weather & events---*/
+
+#weatherStats{
+    max-width: 42vw;
+    float: left;
+    clear:none;
+    margin-left: 10px;
+}
+
+#weatherForecast{
+    max-width: 42vw;
+}
+
+#weatherForecast table{
+    max-width: 42vw;
+}
+
+#upcomingEvents{
+    float: right;
+    display: grid;
+    max-width: 42vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem 1fr 1fr;
+    margin-right: 10px;
+}
+
+.eventContainer{
+    padding-left: 2rem;
+}
+.eventContainer:first-child{
+    grid-row:2/3;
+}
+
+.eventContainer:nth-child(2){
+    grid-row: 3/4;
+}
+
+/*---Ads---*/
+
+#localAdvertisements{
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#localAdvertisements figure{
+    display: inline;
+    max-width: 30vw;
+}
+
+#localAdvertisements figcaption{
+    text-align: center;
+}
+
+#localAdvertisements div:nth-child(2) figcaption{
+    text-align: center;
+}
+
+}

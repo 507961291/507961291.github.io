@@ -51,20 +51,22 @@ main{
 
 
 /*---Header Placement--*/
-header{
+#headerContainer{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3fr 1fr;
     text-align: justify;
     padding: 5px;
     border-radius: 15px 5px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 #ccocIcon{
     grid-column: 1/2;
     grid-row: 1/3;
     align-self: center;
-    justify-self: center;
+    justify-self: right;
     padding: 5px;
 }
 
@@ -80,13 +82,13 @@ header h1,h2{
 #carlsbad{
     grid-column: 2/4;
     grid-row: 1/2;
-    display: flex;
+    display: block;
     padding: 0px 5px;
-    text-align: left;
+    text-align: right;
 }
 
 #carlsbad h1{
-    font-size: 4.30rem;
+    font-size: 4rem;
 }
 
 #chamberOfCommerce{
