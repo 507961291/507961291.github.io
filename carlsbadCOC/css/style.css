@@ -140,6 +140,10 @@ nav ul li{
     display: none;
 }
 
+nav .selected{
+    background-color: var(--highlight2);
+}
+
 /*---Welcome Statement---*/
 #welcomeStatement img{
     object-fit: fill;
@@ -291,4 +295,10 @@ footer img{
 
 footer #finalBar{
     text-align: center;
+}
+
+/*--city--*/
+
+#cityStats{
+    text-align:center;
 }
