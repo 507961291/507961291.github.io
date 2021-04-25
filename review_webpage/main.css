@@ -1,120 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
     
 body{
-        font-family: Helvetica, Arial, sans-serif;
-        margin: 0;
-    }
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+}
 
-    h1, h2, h3, h4, h5, h6{
-        font-family: 'Lora', serif;
-    }
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Lora', serif;
+}
 
-        /* Other page links should behave thus:  */
-    /* normal and visited: #6495ED and no underline ,  */
-    /* active: #DEB887,  */
-    /* hover: underlined */
+header{
+    color: #FAEBD7;
+    background-color: #6495ED;
+    text-align: right;
+    padding: 1rem;
+}
 
-    a:link, a:visited{
-        color: #6495ED;
-        text-decoration: none;
-    }
+header ul{
+    list-style-type: none;
+}
 
-    a:active{
-        color: #DEB887;
-    }
+header li{
+    padding: 1rem 0px;
+}
 
-    a:hover{
-        text-decoration: underline;
-    }
+main{
+    background-color: #FAEBD7;
+    padding: 1px;
+}
 
-    /* Article title links should behave thus: 
-    normal and visited: black and no underline 
-    , active: #DEB887, 
-    hover: #6495ED and underlined */
+main div{
+    margin: 0px;
+    background-color:white;
+}
 
-    .post-content a:link{
-        color: black;
-        text-decoration: none;
-    }
+article{
+    padding: 1rem;
+    margin: 1rem 1rem 2rem;
+    background-color: white;
+    box-shadow: 2px 2px 5px lightgrey;
+}
 
-    .post-content a:active{
-        color: #DEB887;
-    }
+.post-content figure{
+    display: block;
+    text-align: center;
+}
 
-    .post-content a:hover{
-        color: #6495ED;
-        text-decoration: underline;
-    }
+/* Nav Links */
+/* normal and visited: #FAEBD7 and no underline ,  */
+/* active: #DEB887,  */
+/* hover: white and underlined */
 
-    /* Nav Links */
-    /* normal and visited: #FAEBD7 and no underline ,  */
-    /* active: #DEB887,  */
-    /* hover: white and underlined */
+header a:link, header a:visited{
+    color:#FAEBD7;
+    text-decoration: none;
+}
 
-    nav a:link, a:visited{
-        color:#FAEBD7;
-        text-decoration: none;
-    }
+header a:active{
+    color: #DEB887;
+}
 
-    nav a:active{
-        color: #DEB887;
-    }
+header a:hover{
+    color: white;
+    text-decoration: underline;
+}
 
-    nav a:hover{
-        color: white;
-        text-decoration: underline;
-    }
+/* Other page links should behave thus: 
+/* normal and visited: #6495ED and no underline ,  */
+/* active: #DEB887,  */
+/* hover: underlined */
 
-    header{
-        color: #FAEBD7;
-        background-color: #6495ED;
-        text-align: right;
-        padding: 1rem;
-    }
+a:link, a:visited{
+    color: #6495ED;
+    text-decoration: none;
+}
 
-    header ul{
-        list-style-type: none;
-    }
+a:active{
+    color: #DEB887;
+}
 
-    header li{
-        padding: 1rem 0px;
-    }
+a:hover{
+    text-decoration: underline;
+}
 
-    main{
-        background-color: #FAEBD7;
-        padding: 1px;
-    }
+/* Article title links should behave thus: 
+normal and visited: black and no underline 
+active: #DEB887, 
+hover: #6495ED and underlined */
 
-    main div{
-        margin: 0px;
-        background-color:white;
-    }
+.post-content h2 a{
+    color: black;
+    text-decoration: none;
+}
 
-    article{
-        padding: 1rem;
-        margin: 1rem 1rem 2rem;
-        background-color: white;
-        box-shadow: 2px 2px 5px lightgrey;
-    }
+.post-content h2 a:active{
+    color: #DEB887;
+}
 
-    .post-content figure{
-        display: block;
-        text-align: center;
-    }
+.post-content h2 a:hover{
+    color: #6495ED;
+    text-decoration: underline;
+}
 
 @media screen and (min-width: 760px){
 
     body div{
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 25vw 1fr;
     }
 
     header{
         grid-column: 1/2;
+        padding: 1rem 3rem;
     }
 
     main{
         grid-column: 2/3;
     }
+
 
 }
