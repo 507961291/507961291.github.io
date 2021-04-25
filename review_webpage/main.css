@@ -9,11 +9,12 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Lora', serif;
 }
 
-header{
+header, header a, header a:hover, header a:visited{
     color: #FAEBD7;
     background-color: #6495ED;
     text-align: right;
     padding: 1rem;
+    text-decoration: none;
 }
 
 header ul{
@@ -51,16 +52,16 @@ article{
 /* active: #DEB887,  */
 /* hover: white and underlined */
 
-header a:link, header a:visited{
+nav a:link, nav a:visited{
     color:#FAEBD7;
     text-decoration: none;
 }
 
-header a:active{
+nav a:active{
     color: #DEB887;
 }
 
-header a:hover{
+nav a:hover{
     color: white;
     text-decoration: underline;
 }
